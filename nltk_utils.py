@@ -50,3 +50,5 @@ def bag_of_words(tokenized_sentence, words):
     - bag (list): A binary vector indicating the presence (1) or absence (0) of each word in the predefined set.
     """
     pass
+
+
