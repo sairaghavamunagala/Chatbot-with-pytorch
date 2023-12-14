@@ -1,4 +1,5 @@
 import nltk
+import numpy as np
 nltk.download('punkt')
 from nltk.stem.porter import PorterStemmer
 stemmer = PorterStemmer()
@@ -37,18 +38,21 @@ def stem(word):
 
 def bag_of_words(tokenized_sentence, words):
     """
-    Create a bag-of-words representation for a given tokenized sentence and a set of predefined words.
-
-    A bag-of-words representation is a vector that counts the frequency of each word in the given sentence
-    based on the predefined set of words.
-
-    Parameters:
-    - tokenized_sentence (list): A list of words/tokens representing a sentence.
-    - words (list): A predefined list of unique words used for creating the bag-of-words representation.
-
-    Returns:
-    - bag (list): A binary vector indicating the presence (1) or absence (0) of each word in the predefined set.
+    return bag of words array:
+    1 for each known word that exists in the sentence, 0 otherwise
+    example:
+    sentence = ["hello", "how", "are", "you"]
+    words = ["hi", "hello", "I", "you", "bye", "thank", "cool"]
+    bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
-    pass
+    # stem each word
+    sentence_words = [stem(word) for word in tokenized_sentence]
+    # initialize bag with 0 for each word
+    bag = np.zeros(len(words), dtype=np.float32)
+    for idx, w in enumerate(words):
+        if w in sentence_words: 
+            bag[idx] = 1
+
+    return bag
 
 
