@@ -1,84 +1,125 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": [
-          "Hi",
-          "Hey",
-          "How are you",
-          "Is anyone there?",
-          "Hello",
-          "Good day"
-        ],
-        "responses": [
-          "Hey :-)",
-          "Hello, thanks for visiting",
-          "Hi there, what can I do for you?",
-          "Hi there, how can I help?"
-        ]
-      },
-      {
-        "tag": "goodbye",
-        "patterns": ["Bye", "See you later", "Goodbye"],
-        "responses": [
-          "See you later, thanks for visiting",
-          "Have a nice day",
-          "Bye! Come back again soon."
-        ]
-      },
-      {
-        "tag": "thanks",
-        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-        "responses": ["Happy to help!", "Any time!", "My pleasure"]
-      },
-      {
-        "tag": "items",
-        "patterns": [
-          "Which items do you have?",
-          "What kinds of items are there?",
-          "What do you sell?"
-        ],
-        "responses": [
-          "We sell coffee and tea",
-          "We have coffee and tea"
-        ]
-      },
-      {
-        "tag": "payments",
-        "patterns": [
-          "Do you take credit cards?",
-          "Do you accept Mastercard?",
-          "Can I pay with Paypal?",
-          "Are you cash only?"
-        ],
-        "responses": [
-          "We accept VISA, Mastercard and Paypal",
-          "We accept most major credit cards, and Paypal"
-        ]
-      },
-      {
-        "tag": "delivery",
-        "patterns": [
-          "How long does delivery take?",
-          "How long does shipping take?",
-          "When do I get my delivery?"
-        ],
-        "responses": [
-          "Delivery takes 2-4 days",
-          "Shipping takes 2-4 days"
-        ]
-      },
-      {
-        "tag": "funny",
-        "patterns": [
-          "Tell me a joke!",
-          "Tell me something funny!",
-          "Do you know a joke?"
-        ],
-        "responses": [
-          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-          "What did the buffalo say when his son left for college? Bison."
-        ]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "experience",
+      "patterns": [
+        "Tell me about your relevant work experience.",
+        "Describe your previous roles.",
+        "What projects have you worked on in the past?"
+      ],
+      "responses": [
+        "I have experience in...",
+        "In my previous role, I...",
+        "I worked on projects such as..."
+      ]
+    },
+    {
+      "tag": "skills",
+      "patterns": [
+        "What skills do you possess?",
+        "Can you list your technical skills?",
+        "Tell me about your strengths."
+      ],
+      "responses": [
+        "I have skills in...",
+        "My technical skills include...",
+        "Some of my strengths are..."
+      ]
+    },
+    {
+      "tag": "challenges",
+      "patterns": [
+        "Can you share a challenge you've faced at work?",
+        "How do you handle difficult situations?",
+        "Tell me about a problem you successfully solved."
+      ],
+      "responses": [
+        "One challenge I faced was...",
+        "In difficult situations, I...",
+        "I successfully solved a problem by..."
+      ]
+    },
+    {
+      "tag": "teamwork",
+      "patterns": [
+        "How do you collaborate with team members?",
+        "Tell me about a successful teamwork experience.",
+        "How do you handle conflicts within a team?"
+      ],
+      "responses": [
+        "I collaborate by...",
+        "In a successful teamwork experience, we...",
+        "Handling conflicts involves..."
+      ]
+    },
+    {
+      "tag": "future_goals",
+      "patterns": [
+        "What are your career goals?",
+        "Where do you see yourself in five years?",
+        "Tell me about your aspirations for the future."
+      ],
+      "responses": [
+        "My career goals include...",
+        "In five years, I envision...",
+        "I aspire to achieve..."
+      ]
+    },
+    {
+      "tag": "education",
+      "patterns": [
+        "Tell me about your educational background.",
+        "What degrees do you hold?",
+        "How has your education prepared you for this role?"
+      ],
+      "responses": [
+        "I have a degree in...",
+        "My educational background includes...",
+        "My education has prepared me by..."
+      ]
+    },
+    {
+      "tag": "certifications",
+      "patterns": [
+        "Do you have any certifications relevant to this position?",
+        "Tell me about your professional certifications.",
+        "How do your certifications contribute to your skills?"
+      ],
+      "responses": [
+        "I am certified in...",
+        "My certifications include...",
+        "These certifications enhance my skills by..."
+      ]
+    },
+    {
+      "tag": "work_style",
+      "patterns": [
+        "How would you describe your work style?",
+        "What motivates you at work?",
+        "How do you prioritize tasks and manage time?"
+      ],
+      "responses": [
+        "My work style is...",
+        "I am motivated by...",
+        "I prioritize tasks by..."
+      ]
+    },
+    {
+      "tag": "python_questions",
+      "patterns": [
+        "What are the key features of Python?",
+        "Explain the difference between Python 2 and Python 3.",
+        "How does exception handling work in Python?",
+        "Discuss the Global Interpreter Lock (GIL) in Python.",
+        "What is the Zen of Python?"
+      ],
+      "responses": [
+        "The key features of Python include...",
+        "The main differences between Python 2 and Python 3 are...",
+        "Exception handling in Python involves...",
+        "The Global Interpreter Lock (GIL) in Python is ",
+        "The Zen of Python is a set of guiding principles for writing computer programs in Python."
+      ]
+    }
+  ]
+}
